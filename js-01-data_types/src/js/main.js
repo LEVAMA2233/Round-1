@@ -99,3 +99,20 @@ console.log( `Resultado de myBigInt + 3n: ${ myBigInt + 3n }`); // 9007199254740
 console.log( `Resultado de myBigInt + 4n: ${ myBigInt + 4n }`); // 9007199254740995
 console.log( `Resultado de myBigInt + 5n: ${ myBigInt + 5n }`); // 9007199254740996
 console.log( `Resultado de myBigInt + 6n: ${ myBigInt + 6n }`); // 9007199254740997
+console.log( typeof(myBigInt + 6n) ); // bigint
+
+/* ================================================================
+   4. DATOS PRIMITIVOS: BOOLEAN, NULL, UNDEFINED
+   ================================================================
+   - Boolean: true / false (Lógica binaria)
+   - Undefined: Variable declarada pero sin valor asignado (automático).
+   - Null: Ausencia intencional de valor (asignado por el dev).
+*/
+let currentTask; 
+console.log(`Valor de currentTask: ${currentTask}`); // undefined
+
+currentTask = "Iniciar sesión";
+console.log(`Valor de currentTask: ${currentTask}`); // Iniciar sesión
+
+currentTask = null;
+console.log(`Valor de currentTask: ${currentTask}`); // null
