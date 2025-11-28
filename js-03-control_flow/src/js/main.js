@@ -41,3 +41,6 @@
     else condición;   
 
 */
+
+
+console.log("Hola putos pendejos idioras")
