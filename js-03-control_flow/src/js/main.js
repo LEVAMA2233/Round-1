@@ -95,7 +95,6 @@ console.log(alias); // Serchmo
  En caso contrario mostrar la imagen "public/images/dino-emo.png"
 */
 // if-else-if
->>>>>>> serch
 const temperatura=(t=18)=>
     {
         if (t>25 && t<=34)
@@ -184,18 +183,20 @@ console.log( isLoggedIn && "El usuario está logueado" || "El usuario no está l
     
 */
 const getWeather=(codigo)=>{
-     let message;
-    if(codigo===0){
-        message="Clear Sky";
-    }else if( codigo===1 ||codigo===2 ||codigo===3  ){
-        message="Mainly clear, partly cloudy, and overcast";
-    }else if(codigo===45 || codigo===48){
-        message="Fog and depositing rime fog";
-    }else{
-        message="no definido";
-    }
-    return message;
-   
+    let respuesta;
+        switch(weathercode)
+        {
+            case 0:
+                respuesta="Clear Sky";
+                break;
+            case 1,2,3:
+                respuesta="Mainly clear, partly cloudy, and overcasr";
+                break;
+            case 45,48:
+                respuesta="Fog and deposting rime frog";
+                break;
+        }
+    return respuesta;
 }
 
 console.log(getWeather(88));
