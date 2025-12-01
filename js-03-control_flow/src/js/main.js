@@ -372,4 +372,3 @@ console.log(evaluarElNumeroSwitch(-45) ); // Negativo
 console.log(evaluarElNumeroSwitch(0) ); // Cero
 console.log(evaluarElNumeroSwitch(45) ); // Positivo
 console.log(evaluarElNumeroSwitch(100) ); // Grande
->>>>>>> 2f6297218ae70b42c996b3f3051b0abaa32b5de1
