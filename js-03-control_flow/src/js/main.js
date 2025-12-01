@@ -206,3 +206,26 @@ console.log(getWeather(88));
 
 */
 
+const getAccessLevel = ( role ) => {
+    let accessLevel;
+    switch ( role ) {
+        case "super_admin":                   
+        case "admin":
+            accessLevel = "Acceso completo al sistema";
+            break;
+        case "editor":
+            accessLevel = "Acceso para editar contenido";
+            break
+        case "viewer":
+            accessLevel = "Acceso solo para ver contenido";
+            break;
+        default:
+            accessLevel = "Acceso denegado";
+    }
+    return accessLevel;
+};
+console.log( getAccessLevel("admin") ); // Acceso completo al sistema
+console.log( getAccessLevel("super_admin") ); // Acceso completo al sistema
+console.log( getAccessLevel("editor") ); // Acceso para editar contenido
+console.log( getAccessLevel("customer") ); // Acceso denegado
+
