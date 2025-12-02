@@ -5,11 +5,13 @@
 // 4. Elimina al segundo invitado (índice 1) y agrega a otro en su lugar.
 // 4. Muestra la lista final.
 
+/*
 const guestList=["Polo","Mauricio"];
 guestList.push("José");//2
 console.log(guestList);
 guestList.unshift("Carlos")//3
 console.log(guestList);
+*/
 
 /* 
  Ejercicio:
@@ -23,7 +25,7 @@ console.log(guestList);
    5. Muestra la lista actualizada.
    6. Atiende (elimina) la primera tarea de la lista y muéstrala.
 */
-
+/*
 const arraytaskList=[];
 arraytaskList.push("Tarea 1");
 arraytaskList.push("Tarea 2");
@@ -40,12 +42,14 @@ console.log(`Lista de tareas actualizada: ${arraytaskList}`);//5
 
 arraytaskList.shift();//6
 console.log(`Tarea urgente atendida: ${arraytaskList}`);
+*/
 
 // TODO: RETO FINAL (Simulación de Cajero)
 // Tienes un array de movimientos: [100.00, -50.00, 200.00, -100.00]
 // 1. Usa un ciclo FOR, o WHILE o FOR-OF para recorrer los movimientos.
 // 2. Suma los valores a una variable 'totalBalance'.
 // 3. Imprime el balance final.
+/*
 const transactions = [100.00, -50.00, 200.00, -100.00, 500.00];
 let totalBalance = 0;
 
@@ -60,5 +64,6 @@ for(;i<transactions.length;i++)
 }
 
 console.log(`Balance final de transacciones: ${totalBalance}`);
+*/
 
-
+document.getElementById("title").innerText = "OOP in JavaScript, Cohorte 62";
