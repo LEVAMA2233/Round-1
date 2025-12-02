@@ -38,5 +38,27 @@ let urgente="Tarea URGENTE";
 arraytaskList.unshift(urgente);
 console.log(`Lista de tareas actualizada: ${arraytaskList}`);//5
 
-arraytaskList.shift();
+arraytaskList.shift();//6
 console.log(`Tarea urgente atendida: ${arraytaskList}`);
+
+// TODO: RETO FINAL (Simulación de Cajero)
+// Tienes un array de movimientos: [100.00, -50.00, 200.00, -100.00]
+// 1. Usa un ciclo FOR, o WHILE o FOR-OF para recorrer los movimientos.
+// 2. Suma los valores a una variable 'totalBalance'.
+// 3. Imprime el balance final.
+const transactions = [100.00, -50.00, 200.00, -100.00, 500.00];
+let totalBalance = 0;
+
+let i=0;
+//Recorremos los movimientos
+for(;i<transactions.length;i++)
+{
+
+  console.log(`Tus movimientos son: Movimiento:${i+1} ${transactions[i]}\n`);
+  totalBalance+=transactions[i];
+
+}
+
+console.log(`Balance final de transacciones: ${totalBalance}`);
+
+
