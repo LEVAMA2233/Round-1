@@ -2,6 +2,7 @@
 import { changePrincipalTittle } from "./modules/changePrincipalTittle.js";
 import { changeImage } from "./modules/changeLogo.js";
 import { aliceUser } from "./modules/literalObject.js";
+import { Usuario } from "../models/User.js";
 
 changePrincipalTittle("title");
 changeImage("cat.jpg");
