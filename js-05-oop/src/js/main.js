@@ -1,6 +1,7 @@
 
 import { changePrincipalTittle } from "./modules/changePrincipalTittle.js";
 import { changeImage } from "./modules/changeLogo.js";
+import { aliceUser } from "./modules/literalObject.js";
 
 changePrincipalTittle("title");
 changeImage("cat.jpg");
@@ -18,4 +19,6 @@ Ventajas de trabajar con ED Modules:
     de manera más eficiente, ya que solo cargan los módulos necesarios cuando se requieren.
 */
 
-
+console.log(aliceUser.getFullName());
+console.log(aliceUser);
+console.log(aliceUser.stringify());
