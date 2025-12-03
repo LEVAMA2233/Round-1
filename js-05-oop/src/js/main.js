@@ -67,7 +67,23 @@ for(;i<transactions.length;i++)
 console.log(`Balance final de transacciones: ${totalBalance}`);
 */
 
-document.getElementById("title").innerText = "OOP in JavaScript, Cohorte 62";
 
-console.log(`Datos del arreglo participants desde main.js:`, participants); // ['Alice', 'Bob', 'Charlie']
+import { changePrincipalTittle } from "./modules/changePrincipalTittle.js";
+import { changeImage } from "./modules/changePrincipalTittle.js";
+changePrincipalTittle("title");
+changeImage("dino.jpg");
+
+/* 
+ED modules-> Scope local->Lo que pasa en el archivo AY se queda
+Ventajas de trabajar con ED Modules:
+    1. Modularidad: Puedes dividir tu código en módulos más pequeños y manejables, 
+    lo que facilita la organización y el mantenimiento del código.
+    2. Reutilización: Puedes reutilizar módulos en diferentes partes de
+     tu aplicación o incluso en diferentes proyectos, lo que ahorra tiempo y esfuerzo.
+    3. Dependencias explícitas: Puedes declarar las dependencias de un módulo 
+    de manera clara, lo que facilita la comprensión de cómo interactúan los diferentes módulos entre sí.
+    4. Mejora del rendimiento: Los navegadores pueden cargar y ejecutar módulos 
+    de manera más eficiente, ya que solo cargan los módulos necesarios cuando se requieren.
+*/
+
 
